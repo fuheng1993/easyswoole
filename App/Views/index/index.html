@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://696404.com/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>模板渲染</title>
+</head>
+<body>
+<table border="1">
+  <h1>模板渲染</h1>
+ {:var_dump($server)}
+  <tr><th>ID</th><th>电话</th></tr>
+  {volist name="json" id="v"}
+    <tr>
+      <td>{$v.id}</td>
+      <td>{$v.tel}</td>
+    </tr>
+  {/volist}
+  </table>
+</body>
+
+</html>
