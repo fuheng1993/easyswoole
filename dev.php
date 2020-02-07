@@ -10,7 +10,8 @@ return [
         'SETTING' => [
             'worker_num' => 4,
             'reload_async' => true,
-            'max_wait_time'=>3
+            'max_wait_time'=>3,
+            'package_max_length' => 104857600000, //文件上传最大限制10M
         ],
         'TASK'=>[
             'workerNum'=>2,
